@@ -133,7 +133,8 @@ typedef struct {
 	char		headersSent,
 			headers[HTTP_MAX_HEADERS],
 			response[HTTP_MAX_URL],
-			contentType[HTTP_MAX_URL];
+			contentType[HTTP_MAX_URL],
+			contentEncoding[HTTP_MAX_URL];
 } httpRes;
 
 

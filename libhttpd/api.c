@@ -391,6 +391,7 @@ int httpdReadRequest(httpd *server, request *r)
   strcpy(r->response.headers,
 	 "Server: Hughes Technologies Embedded Server\n"); 
   strcpy(r->response.contentType, "text/html");
+  strcpy(r->response.contentEncoding, "");
   strcpy(r->response.response,"200 Output Follows\n");
   r->response.headersSent = 0;
 
