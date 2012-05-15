@@ -1,0 +1,17 @@
+<h1>Domande frequenti</h1>
+<ol type=\"A\" start=\"4\" class=\"question\"><li>Cos'è Ninux?</li></ol>
+<ol type=\"A\" start=\"18\" class=\"response\"><li>Ninux è una <a href=\"javascript:void(0);\" onclick=\"load_content('wcn');\">Wireless Community Network</a>, cioè una rete di calcolatori senza fili creata a Roma da una comunità di informatici, radioamatori e appassionati.<br /><a href=\"http://map.ninux.org/\" target=\"_blank\" title=\"Richiede inoltro ad Internet\">Qui</a> puoi trovare una mappa della rete. </li></ol>
+<ol type=\"A\" start=\"4\" class=\"question\"><li>Ma come vi è venuta l'idea?</li></ol>
+<ol type=\"A\" start=\"18\" class=\"response\"><li>Le Wireless Community Network esistono in tutto il mondo da molti anni. All'inizio ci siamo ispirati a <a href=\"http://www.seattlewireless.net/\" target=\"_blank\" title=\"Richiede inoltro ad Internet\">Seattle Wireless</a>, attualmente abbiamo una concezione della Rete che si colloca tra quella di <a href=\"http://www.freifunk.net/\" target=\"_blank\" title=\"Richiede inoltro ad Internet\">Freifunk</a> (Germania) e quella di <a href=\"http://guifi.net/\" target=\"_blank\" title=\"Richiede inoltro ad Internet\">Guifi</a> (Spagna).<br />Su Internet sono disponibili degli elenchi di reti libere nel Mondo, per maggiori informazioni vedere la pagina del <a href=\"javascript:void(0);\" onclick=\"load_content('manifesto');\">Manifesto</a> nel paragrafo sulle altre Wireless Community Networks.</li></ol>
+<ol type=\"A\" start=\"4\" class=\"question\"><li>Quando arriva la Rete Ninux qui da me, così mi portate Internet?</li></ol>
+<ol type=\"A\" start=\"18\" class=\"response\"><li>Non siamo un Provider, ma una Rete Comunitaria costruita da volontari nel loro tempo libero.<br />È bene quindi sottolineare che:<ul>
+	<li>Tutto il progetto e i servizi a esso legati si basano sull'impegno costante, mantenuto nel tempo libero, di persone volenterose.</li>
+	<li>Le nostre motivazioni sono puramente dedite alla sperimentazione e al divertimento personale.</li>
+	<li>Non abbiamo le infrastrutture per un Servizio Clienti, anzi, non esistono proprio i «clienti»...</li>
+	<li>Perciò, malgrado l'impegno, la disponibilità della connessione alla Rete e la sua quantità di banda non possono essere garantite.</li>
+	<li>Benché i nodi siano di proprietà, l'infrastruttura è decentralizzata e quindi priva di un unico proprietario generale. Tale sistema è stato favorito grazie alle competenze tecnologiche e la serietà di gruppo.</li>
+</ul></li></ol>
+<ol type=\"A\" start=\"4\" class=\"question\"><li>Perché non siete un'Associazione o una <acronym title=\"Organizzazione Non Lucrativa di Utilità Sociale\">ONLUS</acronym>?</li></ol>
+<ol type=\"A\" start=\"18\" class=\"response\"><li>Molti di noi non sono favorevoli a creare un'Associazione perché comporterebbe questioni burocratiche e organizzative che non siamo ancora pronti ad affrontare (per esempio sarebbero obbligatorie figure come Presidente e Responsabile), ma anche perché verrebbe meno il principio decrentativo della rete.</li></ol>
+<ol type=\"A\" start=\"4\" class=\"question\"><li>Cosa vuol dire "Ninux"?</li></ol>
+<ol type=\"A\" start=\"18\" class=\"response\"><li>Un po' come il termine "Linux", il nostro nome rimanda a quello di Nino, il fondatore del progetto, anche se il significato che alcuni di noi gli attribuiscono è "Neighborhood Internet, Network Under eXperiment" (Rete in fase di sperimentazione, Internet di vicinato) oppure "Not Internet, Network Under eXperiment! (Non Internet, .Rete in fase di sperimentazione)</li></ol>

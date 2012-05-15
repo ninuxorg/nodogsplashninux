@@ -1,102 +1,123 @@
 <html>
 <head>
-  <title>Ninux.org - HotSpot</title>
-  <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
-<style type="text/css">
-#apDiv1 {
-	position:absolute;
-	left:6px;
-	top:4px;
-	width:1024px;
-	height:600px;
-	z-index:1;
-	text-align:center;
-}
-#apDiv2 {
-	position:absolute;
-	left:42px;
-	top:0px;
-	width:1007px;
-	height:137px;
-	z-index:2;
-	text-align:center;
-}
-
-#apdivTesto {
-	width:1200;
-	text-align:center;
-}
-
-body {
-	text-align:center; /* for IE */
-	margin:0 auto; /* for the rest */
-	font-family: Verdana, Geneva, sans-serif;
-	background-repeat:repeat-x;
-}
-
-img {  
-	border-style: none;
-}
-
-div#Body {
-text-align:left;
-width:100%; /* or a percentage, or whatever */
-}
-
-#Body div strong {
-	font-size: 18px;
-}
-#Body p strong {
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-#Body p strong {
-	font-family: "Courier New", Courier, monospace;
-}
-.Stile2 {font-size: 12px; }
-.Stile3 {
-	font-size: 14px;
-	font-weight: bold;
-}
-.Stile4 {
-	font-size: 14px;
-	font-style: italic;
-}
-.Stile7 {font-size: 14px}
-.Stile9 {
-	font-size: 16px;
-	font-weight: bold;
-	color: #000000;
-}
-</style>
-
+	<title>Ninux.org - HotSpot</title>
+	
+	<base href="./" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Ninux.org Community - the Ninux Software Team" />
+	<meta name="description" content="Ninux.org Hot Spot Splash Site" />
+	
+	<link rel="shortcut icon" href="$imagesdir/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="$imagesdir/main.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="$imagesdir/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="$imagesdir/pages.js"></script>
+	<script type="text/javascript">
+	var menu;
+	var history = new Array();
+	function stripslashes(str) { str = str.replace(/\\'/g,'\''); str = str.replace(/\\"/g,'"'); str = str.replace(/\\0/g,'\0'); str = str.replace(/\\\\/g,'\\'); return str; }
+	function load_content(content){
+		history.push(pages[content].id);
+		if(pages[content]) {
+			if (history[history.length-2] != pages[content].id){
+				$("#loader").fadeIn(100, function(){
+					$("#page").val(pages[content].id);
+					$("#title, #page_content").fadeOut(300, function() {
+						if (pages[content].page.length > 0){
+							$("title").html(pages[content].page + " &rsaquo; Ninux.org - HotSpot");
+						} else {
+							$("title").html("Ninux.org - HotSpot");
+						}
+						$("#title").html(pages[content].title);
+						$.get("$imagesdir/" + pages[content].body, function(data){
+							var page_body = stripslashes(data);
+							$("#page_content").html(page_body);
+						}, "text");
+					}).fadeIn(600, function(){
+						$("#loader").fadeOut(300);
+					});
+				});
+			}
+		}
+	}
+	$(document).ready(function() {
+		$.each(pages, function(key, value){
+			if (pages[key].show_on_menu){
+				if (pages[key].page.length == 0){ pages[key].page = "Home"; }
+				$("#top_menu ul").append("<li><a href=\"javascript:void(0);\" onclick=\"load_content('" + pages[key].id + "');\">" + pages[key].page + "</a></li>");
+			}
+		});
+		load_content($("#page").val());
+		$('#try_btn').click(function() {
+			$("#search").css({"position": "fixed"}).find("input").addClass("centered").focus().blur(function(){ $("#search").css({"position": "relative"}).find("input").removeClass("centered"); });
+		});
+	});
+	</script>
 </head>
-<body id="Body" background="images/bg.jpg">
-<p><br>
-  <img src="images/top.png" width="609" height="92" align="middle">
-  </div></p><br>
-<div align="center"><table width="678" border="0">
-  <tr>
-    <td width="672"><p align="center" class="Stile9">Willkommen, bienvenue, welcome, benvenuto, bienvenido!</p>
-      <p align="center" class="Stile2"><span class="Stile3">Ninux.org</span> e' una community che ha lo scopo di realizzare in Italia delle reti wireless libere,  senza scopi di lucro, e nel rispetto della filosofia open source. </p>
-      <p align="center" class="Stile2">Lo spirito della nostra community e' la <em>condivisione dei saperi e la sperimentazione di nuove tecnologie wireless</em>. La nostra forza e' la varieta' dei suoi  iscritti, studenti di ingegneria, radioamatori, informatici, filosofi,  ... che mettono a disposizione le proprie conoscenze ed esperienze. <em>Rivendichiamo la liberta' alla sperimentazione.</em> Basta un access point,  un'antenna e .... un po' di pazienza! ;-)</p>
-      <p align="center" class="Stile2">L'accesso ad Internet non e' sempre garantito poiche' e' una rete principalmente sperimentale che tra i vari servizi offre anche Internet. Uno dei nostri scopi e' crearci una nostra Internet senza dover passare attraverso un operatore!</p>
-      <p align="center" class="Stile2">Essendo un HotSpot ad accesso libero ci sono delle regole da rispettare:<br>
-          <span class="Stile4">Non utilizzare programmi di file-sharing!<br>
-          Non avviare pesanti download <br>
-          Non fare attivita' illegali!</span><span lang="it"><strong><br>
-            </strong><br>
-      </span>Facendo clic sul pulsante in basso si potra' continuare, se disponibile, nella navigazione e si accetteranno quindi le condizioni sopra citate.</p>
-      <p align="center" class="Stile2">Se la nostra idea ti piace e vuoi aiutarci, ecco alcuni link interessanti:</p>
-      <p align="center" class="Stile2">	
-        <span class="Stile7">Perche dovresti entrare a far parte della community? Visita la pagina <a href="http://wiki.ninux.org/CommunityNetwork">CommunityNetwork</a></span></p>
-      <p align="center" class="Stile7">Domande e Risposte: <a href="http://wiki.ninux.org/NinuxOrgFAQ">Ninux.org FAQs (domande frequenti) </a> - <a href="http://wiki.ninux.org/MailingLists">Mailing Lists</a></p>
-      <p align="center" class="Stile7">Come puoi contattarci: <a href="mailto:contatti@ninux.org">contatti@ninux.org</a></p>
-      <p align="center" class="Stile7">Link Vari:  <a href="http://wiki.ninux.org/Multimedia">Video e Multimedia</a> | <a href="http://map.ninux.org">Mapserver</a> (richiede <a href="http://www.mozilla.com">firefox</a>)  | <a href="http://blog.ninux.org">Blog ninux.org</a></p>
-      <p align="center">____________________________________</p>
-    <p align="center"><a href="$authtarget" class="Stile3">-&gt; clicca qui per continuare la navigazione &lt;-</a></p></td>
-  </tr>
-</table>
-</div>
-<p>&nbsp;</p>
+<body>
+	<input type="hidden" id="page" value="home" />
+	<div id="loader"></div>
+	<div id="top_menu">
+		<table>
+			<tr>
+				<td>
+					<ul></ul>
+				</td>
+				<td rowspan="2">
+					<div id="search">
+						<form action="http://ninuxoo.ninux.org/cgi-bin/ninuxoo.cgi" method="get">
+							<input type="search" value="" placeholder="Cerca in Ninuxoo" name="q">
+							<input type="submit" value="" style="display: none;">
+						</form>
+					</div>
+				</td>
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+		</table>
+	</div>
+	<div id="main_container">
+		<div id="header">
+			<table>
+				<tr>
+					<td>
+						<a href="javascript:void(0);" onclick="load_content('home');">
+							<img src="$imagesdir/logo.png" alt="Logo NINUX" />
+						</a>
+					</td>
+					<td>
+						<a id="next_btn" href="$authtarget">
+							<span>
+								Prosegui &rsaquo;
+								<span>Continua la navigazione su</span>
+								<span title="$redir">&rarr; $redir</span>
+							</span>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="container">
+			<div id="content">
+				<h1>HotSpot Rete comunitaria</h1>
+				<h2 id="title">Benvenut* in Ninux!</h2>
+				<div id="right_menu">
+					<h3>SERVIZI<span>principali</span></h3>
+					<ul>
+						<li><a href="http://ninuxoo.ninux.org/" title="Il nostro motore di ricerca">Ninuxoo</a><span>Il nostro motore di ricerca</span></li>
+						<li><a href="http://ninuxoo.ninux.org/cgi-bin/browse_share.cgi" title="Elenco dei files condivisi nella rete">Files</a><span>Elenco dei files condivisi nella rete</span></li>
+						<li><a href="http://ninuxoo.ninux.org/cgi-bin/proxy_wiki.cgi?url=Elenco_Telefonico_rete_VoIP_di_ninux.org" title="Elenco Telefonico VoIP Ninux.org">VoIP</a><span>Elenco Telefonico VoIP Ninux.org</span></li>
+						<li><a href="http://10.162.0.85/" title="Accesso alla posta elettronica">WebMail</a><span>Accesso alla posta elettronica</span></li>
+						<li><a href="http://10.168.177.178:8888" title="Ascolta la musica condivisa!">Juke Box</a><span>Ascolta la musica condivisa!</span></li>
+					</ul>
+					<ul>
+						<li><a href="mailto:Ninux.org <contatti@ninux.org>" title="Contatto di posta elettronica">Contatti</a></li>
+					</ul>
+				</div>
+				<div id="page_content"></div>
+			</div>
+			<div id="footer">
+				Splash site powered by Ninux.org ~ the Ninux Software Team :: used icons was made by <a href="http://www.picol.org/" target="_blank" title="PIctorial COmmunication Language - Richiede inoltro a Internet">Picol project</a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
