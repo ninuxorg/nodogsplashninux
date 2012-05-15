@@ -463,10 +463,12 @@ void _httpd_sendHeaders(request *r, int contentLength, int modTime)
 
 	_httpd_net_write(r->clientSock, "Connection: close\n", 18);
 
-	_httpd_net_write(r->clientSock, "Content-Encoding: ", 18);
-	_httpd_net_write(r->clientSock, r->response.contentEncoding,
-		strlen(r->response.contentEncoding));
-	_httpd_net_write(r->clientSock, "\n", 1);
+	if (strlen(r->response.contentEncoding) > 0) {
+		_httpd_net_write(r->clientSock, "Content-Encoding: ", 18);
+		_httpd_net_write(r->clientSock, r->response.contentEncoding,
+			strlen(r->response.contentEncoding));
+		_httpd_net_write(r->clientSock, "\n", 1);
+	}
 
 	_httpd_net_write(r->clientSock, "Content-Type: ", 14);
 	_httpd_net_write(r->clientSock, r->response.contentType, 
@@ -657,8 +659,6 @@ void _httpd_sendFile(httpd *server, request *r, char *path)
 	/* Try to detect if the content is gzipped */
 	if (strcmp ("gz", path) != 0) {
 		strcpy(r->response.contentEncoding,"gzip");
-	} else {
-		strcpy(r->response.contentEncoding,"");
 	}
 
 	if (stat(path, &sbuf) < 0)
