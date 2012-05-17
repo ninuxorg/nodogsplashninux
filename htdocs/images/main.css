@@ -1,14 +1,14 @@
-@font-face {
+﻿@font-face {
 	font-family: "ubuntu";
 	font-style: normal;
 	font-weight: bold;
-	src: local("ubuntu bold"), local("ubuntu-bold"), url("/images/0ihfxul2emph0rojezvrad8e0i7kzn-epnyo3hzu7kw.woff") format("woff");
+	src: local("ubuntu bold"), local("ubuntu-bold"), url("0ihfxul2emph0rojezvrad8e0i7kzn-epnyo3hzu7kw.woff") format("woff");
 }
 @font-face {
 	font-family: "ubuntu";
 	font-style: normal;
 	font-weight: normal;
-	src: local("ubuntu"), url("/images/_xyn3apat_yrrdeqb3sprg.woff") format("woff");
+	src: local("ubuntu"), url("_xyn3apat_yrrdeqb3sprg.woff") format("woff");
 }
 html {
 	background: url("bg.png") left top repeat-x;
@@ -278,7 +278,7 @@ transition-timing-function: ease-in-out;
 	text-align: justify;
 	padding-bottom: 120px;
 }
-#container td > h1:first-child {
+#container h1:first-child {
 	margin-top: 5px;
 	margin-bottom: 0;
 	font-size: 3.2em;
