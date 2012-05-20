@@ -11,13 +11,13 @@
 	src: local("ubuntu"), url("_xyn3apat_yrrdeqb3sprg.woff") format("woff");
 }
 html {
-	background: url("bg.png") left top repeat-x;
+	background: url("bg.gif") left top repeat-x;
 }
 body {
 	margin: 0 auto;
 	font-family: verdana, geneva, sans-serif;
 	font-size: 12px;
-	background: url("bg_footer.png") left bottom repeat-x;
+	background: url("bg_footer.gif") left bottom repeat-x;
 }
 a {
 	color: #ef531d;
@@ -162,7 +162,7 @@ td {
 		-webkit-border-bottom-right-radius: 0;
 	font-size: 15px;
 	position: relative;
-	background: #fff url("search_16.png") 3px 50% no-repeat;
+	background: #fff url("search_16.gif") 3px 50% no-repeat;
 	text-indent: 21px;
 	z-index: 3;
 }
@@ -203,7 +203,7 @@ td {
 }
 #header a#next_btn {
 	background-color: transparent;
-	background:url("next_page_btn.png") bottom left no-repeat;
+	background:url("next_page_btn.gif") bottom left no-repeat;
 	color: #fff;
 	text-decoration: none;
 	font-weight: normal;
@@ -330,11 +330,11 @@ div.content_middle {
 	-webkit-box-shadow: 0 0 54px #eee inset;
 }
 div.share_data {
-	background: url("network_intranet_128_666.png") 20px center no-repeat;
+	background: url("network_intranet_128_666.gif") 20px center no-repeat;
 	margin-bottom: 0;
 }
 div.community {
-	background: url("group_full_128_666.png") 20px center no-repeat;
+	background: url("group_full_128_666.gif") 20px center no-repeat;
 }
 ul#denied_list {
 	margin-top: 30px;

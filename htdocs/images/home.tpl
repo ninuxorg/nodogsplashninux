@@ -6,17 +6,17 @@
 Per questi motivi ricorda che:
 <ul id=\"denied_list\">
 	<li>
-		<img src=\"images/browser_window_security_32_666.png\" alt=\"Icona: Browser window security\" />
+		<img src=\"images/browser_window_security_32_666.gif\" alt=\"Icona: Browser window security\" />
 		<b>Non è possibile utilizzare programmi di file-sharing</b> (come E-mule o i torrents)<br />
 		Questo perché appesantirebbero enormemente il traffico dei dati.
 	</li>
 	<li>
-		<img src=\"images/download_cancel_32_666.png\" alt=\"Icona: Download cancel\" />
+		<img src=\"images/download_cancel_32_666.gif\" alt=\"Icona: Download cancel\" />
 		<b>Non avviare pesanti download</b><br />
 		La velocità di navigazione in Internet è condivisa, perciò la limiteresti a te e anche agli altri.
 	</li>
 	<li>
-		<img src=\"images/imprint_32_666.png\" alt=\"Icona: Imprint\" />
+		<img src=\"images/imprint_32_666.gif\" alt=\"Icona: Imprint\" />
 		<b>Non fare attività illegali!</b><br />
 		I nostri servizi non comprendono il cattivo comportamento. Se non vuoi che la tua connessione venga inibita, comportati bene.
 	</li>
