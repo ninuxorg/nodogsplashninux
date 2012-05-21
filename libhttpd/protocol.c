@@ -643,22 +643,23 @@ void _httpd_sendFile(httpd *server, request *r, char *path)
 	suffix = rindex(path, '.');
 	if (suffix != NULL)
 	{
-		if (strcasecmp(suffix,".gif") == 0) 
+		if (strcasecmp(suffix,".gif") == 0) {
 			strcpy(r->response.contentType,"image/gif");
-		if (strcasecmp(suffix,".jpg") == 0) 
+			strcpy(r->response.contentEncoding,"");
+		}
+		if (strcasecmp(suffix,".jpg") == 0) {
 			strcpy(r->response.contentType,"image/jpeg");
+			strcpy(r->response.contentEncoding,"");
+		}
 		if (strcasecmp(suffix,".xbm") == 0) 
 			strcpy(r->response.contentType,"image/xbm");
-		if (strcasecmp(suffix,".png") == 0) 
+		if (strcasecmp(suffix,".png") == 0) {
 			strcpy(r->response.contentType,"image/png");
+			strcpy(r->response.contentEncoding,"");
+		}
 		/* To handle css files --P. Kube */
 		if (strcasecmp(suffix,".css") == 0) 
 			strcpy(r->response.contentType,"text/css");
-	}
-
-	/* Try to detect if the content is gzipped */
-	if (strcmp ("gz", path) != 0) {
-		strcpy(r->response.contentEncoding,"gzip");
 	}
 
 	if (stat(path, &sbuf) < 0)

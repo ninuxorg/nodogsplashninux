@@ -389,9 +389,9 @@ int httpdReadRequest(httpd *server, request *r)
   ** Setup for a standard response
   */
   strcpy(r->response.headers,
-	 "Server: Hughes Technologies Embedded Server\n"); 
+  "Server: Hughes Technologies Embedded Server\n"); 
   strcpy(r->response.contentType, "text/html");
-  strcpy(r->response.contentEncoding, "");
+  strcpy(r->response.contentEncoding, "gzip");
   strcpy(r->response.response,"200 Output Follows\n");
   r->response.headersSent = 0;
 
