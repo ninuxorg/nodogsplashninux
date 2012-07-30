@@ -14,11 +14,10 @@
 	<script type="text/javascript">
 	var menu;
 	var history = new Array();
-	 //alert("\$tok") //check token
+	// alert("\$tok") //check token
 	function stripslashes(str) { str = str.replace(/\\'/g,'\''); str = str.replace(/\\"/g,'"'); str = str.replace(/\\0/g,'\0'); str = str.replace(/\\\\/g,'\\'); return str; }
 	function load_content(content){
 		var jstoken = "$tok";
-		var jsauthaction = "$authaction";
 		history.push(pages[content].id);
 		if(pages[content]) {
 			if (history[history.length-2] != pages[content].id){
@@ -33,7 +32,7 @@
 						$("#title").html(pages[content].title);
 						$.get("$imagesdir/" + pages[content].body, function(data){
 							var page_body = stripslashes(data);
-							$("#page_content").html(page_body.replace("token",jstoken).replace("authaction",jsauthaction));
+							$("#page_content").html(page_body.replace("token",jstoken));
 						}, "text");
 					}).fadeIn(600, function(){
 						$("#loader").fadeOut(300);
