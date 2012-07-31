@@ -1,7 +1,7 @@
 <p>Vi sono oggi molte Reti Comunitarie (Community Networks), ma queste sono separate geograficamente e socialmente e non formano una rete coerente.<br />
 Questo documento è un tentativo di connettere queste reti isolate fornendo un modello di base per un accordo di peering tra proprietari di singoli nodi di rete - il Pico Peering Agreement.</p>
 <p>Il <acronym title=\"Pico Peering Agreement\">PPA</acronym> è un modo per formalizzare l'interazione paritaria tra i proprietari di due nodi. Questi affermano il loro diritto di proprietà dichiarando la loro volontà di permettere (donare) il libero scambio di dati attraverso le loro reti.</p>
-<p>Il <acronym title=\"Pico Peering Agreement\">PPA</acronym> è mantenuto all'inidirizzo <a href=\"authaction?redir=http%3A%2F%2Fwww.picopeer.net%2FPPA-it.html&tok=token\" target=\"_blank\" title=\"Richiede inoltro ad Internet\">authaction?redir=http%3A%2F%2Fpicopeer.net/</a> da un gruppo di volontari provenienti da tutto il mondo. Il suo scopo è quello di essere utilizzato come modello per altri documenti e licenze con validità locale.</p>&tok=token
+<p>Il <acronym title=\"Pico Peering Agreement\">PPA</acronym> è mantenuto all'inidirizzo <a href=\"authaction?redir=http%3A%2F%2Fwww.picopeer.net%2FPPA-it.html&tok=token\" target=\"_blank\" title=\"Richiede inoltro ad Internet\">authaction?redir=http%3A%2F%2Fpicopeer.net%2F</a> da un gruppo di volontari provenienti da tutto il mondo. Il suo scopo è quello di essere utilizzato come modello per altri documenti e licenze con validità locale.</p>&tok=token
 <br />
 <h1>Accordo</h1>
 <ol>
