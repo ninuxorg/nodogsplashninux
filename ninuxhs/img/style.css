@@ -64,10 +64,26 @@ li {
     background-color: #fff;
     padding: 2em;
     border: 1px solid #c0c0c0;
+    border-radius: 4em;
+    -ie-border-radius: 4em;
+    -moz-border-radius: 4em;    
     -webkit-border-radius: 4em;
     margin-bottom: 3em;
 }
 
 #footer {
     text-align: right;
+}
+
+#submit {
+    padding: .5em;
+    background-color: #f14623;
+    color: #ffffff;
+    font-size: 2em;
+    border: 1px solid #c0c0c0;
+    border-radius: .5em;
+    -ie-border-radius: .5em;
+    -moz-border-radius: .5em;    
+    -webkit-border-radius: .5em;
+    
 }
