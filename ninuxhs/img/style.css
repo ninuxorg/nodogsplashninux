@@ -87,3 +87,12 @@ li {
     -webkit-border-radius: .5em;
     
 }
+
+#submit:active {
+    border: 4px solid #000000; 
+}
+
+.centered {
+    width: 100%;
+    text-align: center;
+}
