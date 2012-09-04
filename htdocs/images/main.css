@@ -90,6 +90,9 @@ table {
 td {
 	padding: 0;
 }
+#top_menu tr:first-child td:first-child {
+	width: 70%;
+}
 #top_menu ul {
 	margin: 0;
 	padding: 0 10px 0 5px;
@@ -138,7 +141,8 @@ td {
 #search {
 	margin-left: 15px;
 	background-color: #2d2d2d;
-	padding: 7px 8px 9px 9px;
+	padding: 7px 8px 0 9px;
+	height: 34px;
 	border-bottom-left-radius: 9px;
 	-moz-border-radius-bottomleft: 9px;
 	-webkit-border-bottom-left-radius: 9px;
